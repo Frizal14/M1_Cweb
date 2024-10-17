@@ -1,0 +1,111 @@
+/* Mengatur tampilan dasar halaman */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2d6db;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container utama untuk aplikasi to-do */
+  .todo-container {
+    background-color: burlywood;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+  }
+  
+  /* Input dan tombol 'Add' */
+  .input-container {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #198754;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #157347;
+  }
+  
+  /* Daftar to-do */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    flex-direction: column; /* Agar konten diatur vertikal */
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+  
+  /* Input untuk teks to-do */
+  li input {
+    border: none;
+    background: transparent;
+    font-size: 1em;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  li input:focus {
+    outline: none;
+  }
+  
+  /* Container untuk tombol edit dan delete */
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .edit-btn, .delete-btn {
+    width: 48%; /* Proporsional agar rapi */
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #e0a800;
+    transition: 0.3ms;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+    transition: 0.3ms;
+  }
+  
