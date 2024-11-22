@@ -1,0 +1,128 @@
+/* Reset some default styling */
+body, h1, h2, table {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for the Product Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: rgb(120, 120, 120);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #ddd;
+}
+
+/* Styling for the Form */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4d4f4d;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #5a5a5a;
+}
+
+/* Styling for the action buttons (Edit and Delete icons) */
+.actions a {
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.actions a i {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+/* Edit button style */
+.actions a[title="Edit"] {
+    background-color: #4CAF50; /* Green for Edit */
+    color: white;
+}
+
+.actions a[title="Edit"]:hover {
+    background-color: #45a049;
+    color: #f1f1f1;
+}
+
+/* Delete button style */
+.actions a[title="Delete"] {
+    background-color: #f44336; /* Red for Delete */
+    color: white;
+}
+
+.actions a[title="Delete"]:hover {
+    background-color: #e53935;
+    color: #f1f1f1;
+}
+
+/* Optional: Add some spacing between the icons */
+.actions a {
+    margin: 0 5px;
+}
